@@ -96,6 +96,8 @@ let lose = () => {
     playGame();
 }
 
+// Função de início do jogo
+
 let playGame = () => {
     alert('Bem vindo ao Genius! Iniciando novo jogo!');
     score = 0;
@@ -103,9 +105,12 @@ let playGame = () => {
     nextLevel();
 }
 
-green.addEventListener('click', click(0));
-red.addEventListener('click', click(1));
-yellow.addEventListener('click', click(2));
-blue.addEventListener('click', click(3));
+// Eventos de clique para cores
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
+
+// Início do jogo
 
 playGame();
